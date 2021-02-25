@@ -11,9 +11,10 @@
             "owners": ["679593333241"],
             "most_recent": true
             },
-        "instance_type": "t2.micro",
-        "ssh_username": "centos",
-        "region": "us-east-1",
+         
+         "instance_type": "t2.micro",
+         "ssh_username": "{{user `ssh_username`}}",
+        "region": "{{user `region`}}",
         "ami_name": "wordpress-example {{timestamp}}"
       }
     ],
